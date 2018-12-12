@@ -2,6 +2,8 @@ version: '2.0'
 
 services:
   build:
+    volumes:
+      - .:/host
     image: docker-ethos-xmr-stak
     container_name: docker-ethos-xmr-stak
     build:
